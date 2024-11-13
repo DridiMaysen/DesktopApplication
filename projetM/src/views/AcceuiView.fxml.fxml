@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controls.AcceuilController">
+   <children>
+      <HBox prefHeight="64.0" prefWidth="800.0" styleClass="white-form" stylesheets="@application.css">
+         <children>
+            <Label prefHeight="58.0" prefWidth="139.0" text="Paranet" textFill="#2cae17">
+               <font>
+                  <Font name="Edwardian Script ITC" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/téléchargement%20(1).png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" styleClass="white-form" stylesheets="@application.css" text="Home" textFill="#fc4881">
+               <font>
+                  <Font name="Bell MT" size="31.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/téléchargement%20(2).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnenvoyer" mnemonicParsing="false" onAction="#envoyer" styleClass="white-form" stylesheets="@application.css" text="Admin" textFill="#fc4881">
+               <font>
+                  <Font name="Bell MT" size="31.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="190.0" layoutY="72.0" prefHeight="45.0" prefWidth="352.0" text="Products Recently Added" textFill="#a7b514">
+         <font>
+            <Font name="Edwardian Script ITC" size="41.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="30.0" layoutY="152.0" prefHeight="429.0" prefWidth="739.0">
+         <content>
+            <GridPane gridLinesVisible="true" prefHeight="459.0" prefWidth="731.0" styleClass="white-form" stylesheets="@application.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="139.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/svr-sun-secure-blur-teinte-spf-50-.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="38.0" prefWidth="221.0" text="56 Dinars " textAlignment="RIGHT" textFill="#bf0e0e">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" contentDisplay="TOP" prefHeight="95.0" prefWidth="227.0" text="Ecran SPF50" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="139.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/-svr-ampoule-anti-ox.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="96.0" prefWidth="212.0" text="Ampoule C" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="218.0" text="105 Dinars" textFill="#bf0e0e" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="145.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/nuxe-reve-de-miel-gel-nettoyant-demaquillant-.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="94.0" prefWidth="229.0" text="Gel Nettoyant" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="39.0" prefWidth="223.0" text="48 Dinars" textFill="#bf0e0e" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="135.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/isdin-ecran-fusion-water-invisible-spf50-50ml.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="81.0" prefWidth="232.0" text="Ecran Fusion" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="31.0" prefWidth="215.0" text="54 Dinars" textFill="#bf0e0e" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="135.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/eucerin-hyaluron-filler-volume-lift-soin-de-jour-peau-seche.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="82.0" prefWidth="220.0" text="Créme nuit" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="35.0" prefWidth="221.0" text="107 Dinars" textFill="#bf0e0e" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="134.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/acm-duolys-legere-soin-hydratant-anti-age-40ml.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="71.0" prefWidth="258.0" text="Créme Eclairsissante " GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="214.0" text="37 Dinars" textFill="#bf0e0e" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="140.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/acm-depiwhite-lait-corporel-200-ml.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="137.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/nuxe-creme-mains-et-ongles-50-ml-.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/eucerin-hyaluron-filler-vit-c-8-ml-.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_RIGHT" prefHeight="75.0" prefWidth="220.0" text="Créme depi" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="222.0" text="49 Dinars " textFill="#bf0e0e" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="67.0" prefWidth="223.0" text="Créme Main" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="33.0" prefWidth="214.0" text="42 Dinars" textFill="#bf0e0e" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="80.0" prefWidth="203.0" text="Filler " GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="226.0" text="102 Dinars " textFill="#bf0e0e" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

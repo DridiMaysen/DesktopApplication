@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controls.ProduitController">
+   <children>
+      <Label layoutX="47.0" layoutY="134.0" prefHeight="25.0" prefWidth="123.0" text="Id Produit :" textFill="#0f791d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="164.0" prefHeight="28.0" prefWidth="104.0" text="Nom : " textFill="#0f791d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="194.0" prefHeight="30.0" prefWidth="137.0" text="Description : " textFill="#0f791d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="231.0" prefHeight="28.0" prefWidth="165.0" text="Prix : " textFill="#0f791d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="266.0" prefHeight="28.0" prefWidth="104.0" text="Quantité : " textFill="#0f791d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      
+      <TextField fx:id="txtidp" editable="false" layoutX="184.0" layoutY="134.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="txtnom" layoutX="184.0" layoutY="167.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="txtdes" layoutX="184.0" layoutY="197.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="txtprix" layoutX="184.0" layoutY="234.0" prefHeight="25.0" prefWidth="123.0" />
+      <Button layoutX="350.0" layoutY="181.0" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="81.0" styleClass="btn" stylesheets="@application.css" text="Add">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="466.0" layoutY="180.0" mnemonicParsing="false" onAction="#clear" prefHeight="39.0" prefWidth="81.0" styleClass="btn" stylesheets="@application.css" text="Clear">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="348.0" layoutY="250.0" mnemonicParsing="false" onAction="#update" prefHeight="39.0" prefWidth="84.0" styleClass="btn" stylesheets="@application.css" text="Update">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="202.0" layoutY="53.0" prefHeight="36.0" prefWidth="178.0" text="Vue Produit" textFill="#ee0000">
+         <font>
+            <Font name="Calisto MT" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="466.0" layoutY="250.0" mnemonicParsing="false" onAction="#delete" prefHeight="39.0" prefWidth="81.0" styleClass="btn" stylesheets="@application.css" text="Delete">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableProduit" layoutX="56.0" layoutY="396.0" onMousePressed="#charge" prefHeight="174.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="64.0" text="IdProduit" />
+          <TableColumn fx:id="colnom" prefWidth="89.0" text="nom" />
+            <TableColumn fx:id="coldes" prefWidth="128.0" text="Description" />
+            <TableColumn fx:id="colprix" prefWidth="57.0" text="Prix" />
+            <TableColumn fx:id="colquant" prefWidth="66.0" text="Quantité" />
+            <TableColumn fx:id="colidMarque" prefWidth="83.0" text="NomMarque" />
+           
+        </columns>
+      </TableView>
+      <Label layoutX="47.0" layoutY="300.0" prefHeight="28.0" prefWidth="104.0" text="Marque : " textFill="#0f791d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="53.0" layoutX="21.0" layoutY="14.0" onMouseClicked="#changer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/retour-removebg-preview.png" />
+         </image></ImageView>
+      <Spinner fx:id="spinqt" layoutX="184.0" layoutY="269.0" max="100" min="0" prefHeight="25.0" prefWidth="123.0" />
+      <ComboBox fx:id="combomarque" layoutX="184.0" layoutY="303.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="filterField" layoutX="211.0" layoutY="341.0" prefHeight="36.0" prefWidth="178.0" promptText="search" />
+      <ImageView fitHeight="107.0" fitWidth="153.0" layoutX="424.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/téléchargement__3_-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
